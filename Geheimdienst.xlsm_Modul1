@@ -9,7 +9,7 @@ Sub Start()
 End Sub
 Sub Intervall()
     Dim NextTime As Date
-    NextTime = Now + TimeValue("00:00:05")  'Zeitintervall festlegen, hier 15 Minuten
+    NextTime = Now + TimeValue("00:00:05")  'Zeitintervall festlegen, hier 5 Sekunden
     Application.OnTime NextTime, "Intervall"
     Call Spielfeld_aktualisieren      'Eingabe von Schritt, der wiederholt werden soll
 End Sub

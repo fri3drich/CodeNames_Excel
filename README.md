@@ -1,16 +1,16 @@
 # CodeNames_Excel
 Inhalt
-1.	Voraussetzungen	
-2.	Spielvorbereitung	
-Teams	
-Server.xlsm	
-Geheimdienst.xlsm	
-Spieler.xlsm	
-3.	Spielen	
-4.	Eigene Wörter hinzufügen	
+1.Voraussetzungen	
+2.Spielvorbereitung	
+	Teams	
+	Server.xlsm	
+	Geheimdienst.xlsm	
+	Spieler.xlsm	
+3.Spielen	
+4.Eigene Wörter hinzufügen	
 ---------------------------------------------------------------------------------
 
-1.	Voraussetzungen
+1.Voraussetzungen
 4 Spieler
 Alle Spieler haben Netzwerkzugriff auf die Server-Datei zum Beispiel durch:
 -Lokales Netzwerk
@@ -20,7 +20,8 @@ Alle Spieler haben Netzwerkzugriff auf die Server-Datei zum Beispiel durch:
 -…
 ---------------------------------------------------------------------------------
 
-2.	Spielvorbereitung
+2.Spielvorbereitung
+
 Teams
 2 Gruppen vorher festlegen, inklusive der Geheimdienstchefs. Team Blau fängt grundsätzlich an. Dies sollte vorher besprechen werden, welche Gruppe welches Team ist. Dies kann jede Runde wechseln.
 
@@ -47,12 +48,12 @@ Die Spieler tragen ebenfalls in Zelle „C12“ den Pfad zur Server.xlsm ein.
 Anschließend auf den Button „Spiel starten“
 ---------------------------------------------------------------------------------
 
-3.	Spielen
+3.Spielen
 Es gelten die gleichen Spielregeln wie beim richtigen Code-Names.
 Team Blau fängt an. Der Geheimdienstchef übermittelt den Spielern Ein Wort mit Anzahl der Begriffe, die er meint. 
 Spieler Team Blau trifft seine Auswahl über die Buttons „Auswahl“ im jeweiligen Feld. Möchte er seinen Zug beenden, drückt der Spieler den „Zug beenden“ Button.
 Die Ansichten werden alle 5 Sekunden aktualisiert. Deswegen kann es sein, dass beim Drücken von Buttons einige Sekunden gewartet werden muss, damit man ein Ergebnis sieht.
 ---------------------------------------------------------------------------------
 
-4.	Eigene Wörter hinzufügen
+4.Eigene Wörter hinzufügen
 Server.xlsm öffnen und in die Tabelle „Wortliste“ gehen. In der Tabelle Wörter hinzufügen und ID Fortlaufend schreiben.

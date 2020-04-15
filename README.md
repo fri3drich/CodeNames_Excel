@@ -1,13 +1,22 @@
 # CodeNames_Excel
 Inhalt
+
 1.Voraussetzungen
+
 2.Spielvorbereitung
+
 	Teams
+	
 	Server.xlsm
+	
 	Geheimdienst.xlsm
+	
 	Spieler.xlsm
+	
 3.Spielen
+
 4.Eigene Wörter hinzufügen
+
 ---------------------------------------------------------------------------------
 1.Voraussetzungen
 4 Spieler

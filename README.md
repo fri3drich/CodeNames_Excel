@@ -1,5 +1,6 @@
 # CodeNames_Excel
 Inhalt
+---------------------------------------------------------------------------------
 
 1.Voraussetzungen
 
@@ -17,8 +18,9 @@ Inhalt
 
 4.Eigene Wörter hinzufügen
 
----------------------------------------------------------------------------------
+
 1.Voraussetzungen
+---------------------------------------------------------------------------------
 
 4 Spieler
 
@@ -32,8 +34,9 @@ Alle Spieler haben Netzwerkzugriff auf die Server-Datei zum Beispiel durch:
 
 -Hamachi
 
----------------------------------------------------------------------------------
+
 2.Spielvorbereitung
+---------------------------------------------------------------------------------
 
 Teams
 
@@ -78,8 +81,10 @@ Ggf. „Inhalt aktivieren“. Siehe: Server.xlsm
 Die Spieler tragen ebenfalls in Zelle „C12“ den Pfad zur Server.xlsm ein.
 
 Anschließend auf den Button „Spiel starten“
----------------------------------------------------------------------------------
+
+
 3.Spielen
+---------------------------------------------------------------------------------
 
 Es gelten die gleichen Spielregeln wie beim richtigen Code-Names.
 
@@ -87,8 +92,9 @@ Team Blau fängt an. Der Geheimdienstchef übermittelt den Spielern Ein Wort mit
 
 Spieler Team Blau trifft seine Auswahl über die Buttons „Auswahl“ im jeweiligen Feld. Möchte er seinen Zug beenden, drückt der Spieler den „Zug beenden“ Button.
 Die Ansichten werden alle 5 Sekunden aktualisiert. Deswegen kann es sein, dass beim Drücken von Buttons einige Sekunden gewartet werden muss, damit man ein Ergebnis sieht.
----------------------------------------------------------------------------------
+
 
 4.Eigene Wörter hinzufügen
+---------------------------------------------------------------------------------
 
 Server.xlsm öffnen und in die Tabelle „Wortliste“ gehen. In der Tabelle Wörter hinzufügen und ID Fortlaufend schreiben.

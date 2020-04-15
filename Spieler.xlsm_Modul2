@@ -1,0 +1,332 @@
+Dim DateiPfad As String
+
+Sub PfadDeklaration()
+   DateiPfad = Cells(12, 3).Value
+End Sub
+
+Sub Zug_beenden()
+Call PfadDeklaration
+
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+
+Set ext_wb = Workbooks.Open(DateiPfad)
+
+If ext_wb.Sheets("Home").Cells(9, 7).Interior.Color = RGB(0, 191, 255) Then
+ext_wb.Sheets("Home").Cells(9, 7).Interior.Color = RGB(255, 0, 0)
+ThisWorkbook.Sheets("Spielfeld").Cells(8, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf ext_wb.Sheets("Home").Cells(9, 7).Interior.Color = RGB(255, 0, 0) Then
+ext_wb.Sheets("Home").Cells(9, 7).Interior.Color = RGB(0, 191, 255)
+ThisWorkbook.Sheets("Spielfeld").Cells(8, 4).Interior.Color = RGB(0, 191, 255)
+End If
+
+ext_wb.Close savechanges = yes
+
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+
+End Sub
+Sub Klick_B2()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(2, 2).Copy
+ext_wb.Sheets("Home").Cells(9, 8).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_B3()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(3, 2).Copy
+ext_wb.Sheets("Home").Cells(10, 8).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_B4()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(4, 2).Copy
+ext_wb.Sheets("Home").Cells(11, 8).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_B5()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(5, 2).Copy
+ext_wb.Sheets("Home").Cells(12, 8).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_B6()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(6, 2).Copy
+ext_wb.Sheets("Home").Cells(13, 8).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+
+Sub Klick_C2()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(2, 3).Copy
+ext_wb.Sheets("Home").Cells(9, 9).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_C3()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(3, 3).Copy
+ext_wb.Sheets("Home").Cells(10, 9).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_C4()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(4, 3).Copy
+ext_wb.Sheets("Home").Cells(11, 9).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_C5()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(5, 3).Copy
+ext_wb.Sheets("Home").Cells(12, 9).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_C6()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(6, 3).Copy
+ext_wb.Sheets("Home").Cells(13, 9).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+
+Sub Klick_D2()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(2, 4).Copy
+ext_wb.Sheets("Home").Cells(9, 10).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_D3()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(3, 4).Copy
+ext_wb.Sheets("Home").Cells(10, 10).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_D4()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(4, 4).Copy
+ext_wb.Sheets("Home").Cells(11, 10).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_D5()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(5, 4).Copy
+ext_wb.Sheets("Home").Cells(12, 10).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_D6()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(6, 4).Copy
+ext_wb.Sheets("Home").Cells(13, 10).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+
+Sub Klick_E2()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(2, 5).Copy
+ext_wb.Sheets("Home").Cells(9, 11).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_E3()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(3, 5).Copy
+ext_wb.Sheets("Home").Cells(10, 11).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_E4()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(4, 5).Copy
+ext_wb.Sheets("Home").Cells(11, 11).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_E5()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(5, 5).Copy
+ext_wb.Sheets("Home").Cells(12, 11).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_E6()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(6, 5).Copy
+ext_wb.Sheets("Home").Cells(13, 11).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+
+Sub Klick_F2()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(2, 6).Copy
+ext_wb.Sheets("Home").Cells(9, 12).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_F3()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(3, 6).Copy
+ext_wb.Sheets("Home").Cells(10, 12).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_F4()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(4, 6).Copy
+ext_wb.Sheets("Home").Cells(11, 12).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_F5()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(5, 6).Copy
+ext_wb.Sheets("Home").Cells(12, 12).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub
+Sub Klick_F6()
+Call PfadDeklaration
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+Set ext_wb = Workbooks.Open(DateiPfad)
+'Kopiere hintergrundfarbe auf ServerSpielfeld
+ext_wb.Sheets("Home").Cells(6, 6).Copy
+ext_wb.Sheets("Home").Cells(13, 12).PasteSpecial
+ext_wb.Close savechanges = yes
+Application.ScreenUpdating = True
+Application.DisplayAlerts = True
+End Sub

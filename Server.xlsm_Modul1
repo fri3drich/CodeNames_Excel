@@ -1,0 +1,366 @@
+Sub Zufall_Bereich()
+    'Hier Anzahl der Worte in der DB
+    Wortanzahl = Worksheets("Wortliste").Cells(2, 4).Value
+
+   Dim rng As Range, rngAll As Range
+   Dim iRandomize As Integer
+   Set rngAll = Range("N2:R6")
+   Randomize
+   rngAll.ClearContents
+   For Each rng In rngAll.Cells
+      iRandomize = Int((Wortanzahl * Rnd) + 1)
+      Do Until WorksheetFunction.CountIf(rngAll, iRandomize) = 0
+         iRandomize = Int((Wortanzahl * Rnd) + 1)
+      Loop
+      rng.Value = iRandomize
+   Next rng
+   
+End Sub
+
+Sub Code_Karte()
+'Hier Anzahl der Felder
+Feldanzahl = Int(25)
+
+Dim rng As Range, rngAll As Range
+Dim iRandomize As Integer
+Set rngAll = Range("T2:X6")
+Randomize
+rngAll.ClearContents
+For Each rng In rngAll.Cells
+iRandomize = Int((Feldanzahl * Rnd) + 1)
+Do Until WorksheetFunction.CountIf(rngAll, iRandomize) = 0
+   iRandomize = Int((Feldanzahl * Rnd) + 1)
+   Loop
+   rng.Value = iRandomize
+Next rng
+
+'Reihe B
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(2, 20).Value >= 1 And Cells(2, 20).Value <= 8 Then
+Cells(2, 2).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(2, 20).Value >= 9 And Cells(2, 20).Value <= 17 Then
+Cells(2, 2).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(2, 20).Value >= 18 And Cells(2, 20).Value <= 24 Then
+Cells(2, 2).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(2, 2).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(3, 20).Value >= 1 And Cells(3, 20).Value <= 8 Then
+Cells(3, 2).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(3, 20).Value >= 9 And Cells(3, 20).Value <= 17 Then
+Cells(3, 2).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(3, 20).Value >= 18 And Cells(3, 20).Value <= 24 Then
+Cells(3, 2).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(3, 2).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(4, 20).Value >= 1 And Cells(4, 20).Value <= 8 Then
+Cells(4, 2).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(4, 20).Value >= 9 And Cells(4, 20).Value <= 17 Then
+Cells(4, 2).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(4, 20).Value >= 18 And Cells(4, 20).Value <= 24 Then
+Cells(4, 2).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(4, 2).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(5, 20).Value >= 1 And Cells(5, 20).Value <= 8 Then
+Cells(5, 2).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(5, 20).Value >= 9 And Cells(5, 20).Value <= 17 Then
+Cells(5, 2).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(5, 20).Value >= 18 And Cells(5, 20).Value <= 24 Then
+Cells(5, 2).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(5, 2).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(6, 20).Value >= 1 And Cells(6, 20).Value <= 8 Then
+Cells(6, 2).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(6, 20).Value >= 9 And Cells(6, 20).Value <= 17 Then
+Cells(6, 2).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(6, 20).Value >= 18 And Cells(6, 20).Value <= 24 Then
+Cells(6, 2).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(6, 2).Interior.Color = RGB(166, 166, 166)
+End If
+
+'Reihe C
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(2, 21).Value >= 1 And Cells(2, 21).Value <= 8 Then
+Cells(2, 3).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(2, 21).Value >= 9 And Cells(2, 21).Value <= 17 Then
+Cells(2, 3).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(2, 21).Value >= 18 And Cells(2, 21).Value <= 24 Then
+Cells(2, 3).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(2, 3).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(3, 21).Value >= 1 And Cells(3, 21).Value <= 8 Then
+Cells(3, 3).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(3, 21).Value >= 9 And Cells(3, 21).Value <= 17 Then
+Cells(3, 3).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(3, 21).Value >= 18 And Cells(3, 21).Value <= 24 Then
+Cells(3, 3).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(3, 3).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(4, 21).Value >= 1 And Cells(4, 21).Value <= 8 Then
+Cells(4, 3).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(4, 21).Value >= 9 And Cells(4, 21).Value <= 17 Then
+Cells(4, 3).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(4, 21).Value >= 18 And Cells(4, 21).Value <= 24 Then
+Cells(4, 3).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(4, 3).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(5, 21).Value >= 1 And Cells(5, 21).Value <= 8 Then
+Cells(5, 3).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(5, 21).Value >= 9 And Cells(5, 21).Value <= 17 Then
+Cells(5, 3).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(5, 21).Value >= 18 And Cells(5, 21).Value <= 24 Then
+Cells(5, 3).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(5, 3).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(6, 21).Value >= 1 And Cells(6, 21).Value <= 8 Then
+Cells(6, 3).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(6, 21).Value >= 9 And Cells(6, 21).Value <= 17 Then
+Cells(6, 3).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(6, 21).Value >= 18 And Cells(6, 21).Value <= 24 Then
+Cells(6, 3).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(6, 3).Interior.Color = RGB(166, 166, 166)
+End If
+
+'Reihe D
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(2, 22).Value >= 1 And Cells(2, 22).Value <= 8 Then
+Cells(2, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(2, 22).Value >= 9 And Cells(2, 22).Value <= 17 Then
+Cells(2, 4).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(2, 22).Value >= 18 And Cells(2, 22).Value <= 24 Then
+Cells(2, 4).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(2, 4).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(3, 22).Value >= 1 And Cells(3, 22).Value <= 8 Then
+Cells(3, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(3, 22).Value >= 9 And Cells(3, 22).Value <= 17 Then
+Cells(3, 4).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(3, 22).Value >= 18 And Cells(3, 22).Value <= 24 Then
+Cells(3, 4).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(3, 4).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(4, 22).Value >= 1 And Cells(4, 22).Value <= 8 Then
+Cells(4, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(4, 22).Value >= 9 And Cells(4, 22).Value <= 17 Then
+Cells(4, 4).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(4, 22).Value >= 18 And Cells(4, 22).Value <= 24 Then
+Cells(4, 4).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(4, 4).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(5, 22).Value >= 1 And Cells(5, 22).Value <= 8 Then
+Cells(5, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(5, 22).Value >= 9 And Cells(5, 22).Value <= 17 Then
+Cells(5, 4).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(5, 22).Value >= 18 And Cells(5, 22).Value <= 24 Then
+Cells(5, 4).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(5, 4).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(6, 22).Value >= 1 And Cells(6, 22).Value <= 8 Then
+Cells(6, 4).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(6, 22).Value >= 9 And Cells(6, 22).Value <= 17 Then
+Cells(6, 4).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(6, 22).Value >= 18 And Cells(6, 22).Value <= 24 Then
+Cells(6, 4).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(6, 4).Interior.Color = RGB(166, 166, 166)
+End If
+
+'Reihe E
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(2, 23).Value >= 1 And Cells(2, 23).Value <= 8 Then
+Cells(2, 5).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(2, 23).Value >= 9 And Cells(2, 23).Value <= 17 Then
+Cells(2, 5).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(2, 23).Value >= 18 And Cells(2, 23).Value <= 24 Then
+Cells(2, 5).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(2, 5).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(3, 23).Value >= 1 And Cells(3, 23).Value <= 8 Then
+Cells(3, 5).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(3, 23).Value >= 9 And Cells(3, 23).Value <= 17 Then
+Cells(3, 5).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(3, 23).Value >= 18 And Cells(3, 23).Value <= 24 Then
+Cells(3, 5).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(3, 5).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(4, 23).Value >= 1 And Cells(4, 23).Value <= 8 Then
+Cells(4, 5).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(4, 23).Value >= 9 And Cells(4, 23).Value <= 17 Then
+Cells(4, 5).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(4, 23).Value >= 18 And Cells(4, 23).Value <= 24 Then
+Cells(4, 5).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(4, 5).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(5, 23).Value >= 1 And Cells(5, 23).Value <= 8 Then
+Cells(5, 5).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(5, 23).Value >= 9 And Cells(5, 23).Value <= 17 Then
+Cells(5, 5).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(5, 23).Value >= 18 And Cells(5, 23).Value <= 24 Then
+Cells(5, 5).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(5, 5).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(6, 23).Value >= 1 And Cells(6, 23).Value <= 8 Then
+Cells(6, 5).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(6, 23).Value >= 9 And Cells(6, 23).Value <= 17 Then
+Cells(6, 5).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(6, 23).Value >= 18 And Cells(6, 23).Value <= 24 Then
+Cells(6, 5).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(6, 5).Interior.Color = RGB(166, 166, 166)
+End If
+
+'Reihe F
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(2, 24).Value >= 1 And Cells(2, 24).Value <= 8 Then
+Cells(2, 6).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(2, 24).Value >= 9 And Cells(2, 24).Value <= 17 Then
+Cells(2, 6).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(2, 24).Value >= 18 And Cells(2, 24).Value <= 24 Then
+Cells(2, 6).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(2, 6).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(3, 24).Value >= 1 And Cells(3, 24).Value <= 8 Then
+Cells(3, 6).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(3, 24).Value >= 9 And Cells(3, 24).Value <= 17 Then
+Cells(3, 6).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(3, 24).Value >= 18 And Cells(3, 24).Value <= 24 Then
+Cells(3, 6).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(3, 6).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(4, 24).Value >= 1 And Cells(4, 24).Value <= 8 Then
+Cells(4, 6).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(4, 24).Value >= 9 And Cells(4, 24).Value <= 17 Then
+Cells(4, 6).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(4, 24).Value >= 18 And Cells(4, 24).Value <= 24 Then
+Cells(4, 6).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(4, 6).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(5, 24).Value >= 1 And Cells(5, 24).Value <= 8 Then
+Cells(5, 6).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(5, 24).Value >= 9 And Cells(5, 24).Value <= 17 Then
+Cells(5, 6).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(5, 24).Value >= 18 And Cells(5, 24).Value <= 24 Then
+Cells(5, 6).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(5, 6).Interior.Color = RGB(166, 166, 166)
+End If
+'1-8 = Rot; 9-17 = Blau; 18-24 = Gelb; 25 = Schwarz
+If Cells(6, 24).Value >= 1 And Cells(6, 24).Value <= 8 Then
+Cells(6, 6).Interior.Color = RGB(255, 0, 0)
+ElseIf Cells(6, 24).Value >= 9 And Cells(6, 24).Value <= 17 Then
+Cells(6, 6).Interior.Color = RGB(0, 191, 255)
+ElseIf Cells(6, 24).Value >= 18 And Cells(6, 24).Value <= 24 Then
+Cells(6, 6).Interior.Color = RGB(255, 236, 139)
+Else
+Cells(6, 6).Interior.Color = RGB(166, 166, 166)
+End If
+
+'Verweis der Worte in die Spalte B
+Cells(2, 2).Value = Cells(2, 8).Value
+Cells(3, 2).Value = Cells(2, 9).Value
+Cells(4, 2).Value = Cells(2, 10).Value
+Cells(5, 2).Value = Cells(2, 11).Value
+Cells(6, 2).Value = Cells(2, 12).Value
+'Verweis der Worte in die Spalte C
+Cells(2, 3).Value = Cells(3, 8).Value
+Cells(3, 3).Value = Cells(3, 9).Value
+Cells(4, 3).Value = Cells(3, 10).Value
+Cells(5, 3).Value = Cells(3, 11).Value
+Cells(6, 3).Value = Cells(3, 12).Value
+'Verweis der Worte in die Spalte D
+Cells(2, 4).Value = Cells(4, 8).Value
+Cells(3, 4).Value = Cells(4, 9).Value
+Cells(4, 4).Value = Cells(4, 10).Value
+Cells(5, 4).Value = Cells(4, 11).Value
+Cells(6, 4).Value = Cells(4, 12).Value
+'Verweis der Worte in die Spalte E
+Cells(2, 5).Value = Cells(5, 8).Value
+Cells(3, 5).Value = Cells(5, 9).Value
+Cells(4, 5).Value = Cells(5, 10).Value
+Cells(5, 5).Value = Cells(5, 11).Value
+Cells(6, 5).Value = Cells(5, 12).Value
+'Verweis der Worte in die Spalte F
+Cells(2, 6).Value = Cells(6, 8).Value
+Cells(3, 6).Value = Cells(6, 9).Value
+Cells(4, 6).Value = Cells(6, 10).Value
+Cells(5, 6).Value = Cells(6, 11).Value
+Cells(6, 6).Value = Cells(6, 12).Value
+
+'Worte in Spielfeld kopieren
+'Verweis der Worte in die Spalte B
+Cells(9, 8).Value = Cells(2, 8).Value
+Cells(10, 8).Value = Cells(2, 9).Value
+Cells(11, 8).Value = Cells(2, 10).Value
+Cells(12, 8).Value = Cells(2, 11).Value
+Cells(13, 8).Value = Cells(2, 12).Value
+'Verweis der Worte in die Spalte C
+Cells(9, 9).Value = Cells(3, 8).Value
+Cells(10, 9).Value = Cells(3, 9).Value
+Cells(11, 9).Value = Cells(3, 10).Value
+Cells(12, 9).Value = Cells(3, 11).Value
+Cells(13, 9).Value = Cells(3, 12).Value
+'Verweis der Worte in die Spalte D
+Cells(9, 10).Value = Cells(4, 8).Value
+Cells(10, 10).Value = Cells(4, 9).Value
+Cells(11, 10).Value = Cells(4, 10).Value
+Cells(12, 10).Value = Cells(4, 11).Value
+Cells(13, 10).Value = Cells(4, 12).Value
+'Verweis der Worte in die Spalte E
+Cells(9, 11).Value = Cells(5, 8).Value
+Cells(10, 11).Value = Cells(5, 9).Value
+Cells(11, 11).Value = Cells(5, 10).Value
+Cells(12, 11).Value = Cells(5, 11).Value
+Cells(13, 11).Value = Cells(5, 12).Value
+'Verweis der Worte in die Spalte F
+Cells(9, 12).Value = Cells(6, 8).Value
+Cells(10, 12).Value = Cells(6, 9).Value
+Cells(11, 12).Value = Cells(6, 10).Value
+Cells(12, 12).Value = Cells(6, 11).Value
+Cells(13, 12).Value = Cells(6, 12).Value
+
+'Hintergrund in Spielfeld auf weiss setzen
+Range("H9:L13").Interior.Color = RGB(255, 255, 255)
+
+'Team Am Zug auf Blau setzen
+Cells(9, 7).Interior.Color = RGB(0, 191, 255)
+
+End Sub

@@ -66,7 +66,7 @@ Ggf. „Inhalt Aktivieren“ siehe: Server.xlsm
 
 In die Zelle „C12“ den Pfad zur Server.xlsm angeben.
 
-Beispiel: „\\192.168.1.5\shared\Server.xlsm“
+Beispiel: „\\\192.168.1.5\shared\Server.xlsm“
 
 Auf den Button „Starten“ klicken und die Datei Excel Datei geöffnet lassen. Auf der Linken Seite werden die Geheimagenten beider Teams(rot/blau), Zivilisten(gelb) und der Attentäter(grau) dargestellt. Außerdem wird angezeigt, welches Team am Zug ist. Auf der rechten Seite ist das Spielfeld zu sehen, was die Spieler sehen.
 

@@ -6,13 +6,13 @@ Inhalt
 
 2.Spielvorbereitung
 
-	Teams
+*Teams
 	
-	Server.xlsm
+*Server.xlsm
 	
-	Geheimdienst.xlsm
+*Geheimdienst.xlsm
 	
-	Spieler.xlsm
+*Spieler.xlsm
 	
 3.Spielen
 
@@ -38,11 +38,12 @@ Alle Spieler haben Netzwerkzugriff auf die Server-Datei zum Beispiel durch:
 2.Spielvorbereitung
 ---------------------------------------------------------------------------------
 
-Teams
+*Teams
 
 2 Gruppen vorher festlegen, inklusive der Geheimdienstchefs. Team Blau fängt grundsätzlich an. Dies sollte vorher besprechen werden, welche Gruppe welches Team ist. Dies kann jede Runde wechseln.
 
-Server.xlsm
+
+*Server.xlsm
 
 Ein Geheimdienstchef speichert die Server.xlsm an einem Pfad, auf den alle Spieler zugreifen können. Anschließend öffnet er die Server.xlsm.
 
@@ -57,7 +58,7 @@ Auf den Button „Neue Code-Karte erstellen“ drücken.
 Excel Tabelle schließen und speichern
 
 
-Geheimdienst.xlsm
+*Geheimdienst.xlsm
 
 Anschließend müssen beide Geheimdienstchefs die Lokale Geheimdienst.xlsm öffnen.
 
@@ -72,7 +73,7 @@ Auf den Button „Starten“ klicken und die Datei Excel Datei geöffnet lassen.
 Die Geheimdienstchefs sind nun bereit zum Spielen.
 
 
-Spieler.xlsm
+*Spieler.xlsm
 
 Die Spieler öffnen ihre lokale Spieler.xlsm
 

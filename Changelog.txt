@@ -1,0 +1,16 @@
+Version 1.0
+Release
+
+Version 1.1
+Anpassungen
+	Server.xlsm/Wortliste
+		Zeichenüberprüfung <= 12 Zeichen in Spalte "B"
+	Server.xlsm/Home
+		Spaltenbreite H,I,J,K,L auf 135px erweitert
+Bug-Fix
+	Server.xlsm - [Modul1 (Code)]
+      	Zufallsberechnung:
+		iRandomize = Int((25 * Rnd) + 1)
+	ersetzt durch:
+      		iRandomize = Int((Wortanzahl * Rnd) + 1)
+	

@@ -1,0 +1,39 @@
+Dim DateiPfad As String
+
+Sub PfadDeklaration()
+   DateiPfad = Cells(12, 3).Value
+End Sub
+Sub Start()
+    Call PfadDeklaration
+    Call Intervall
+End Sub
+Sub Intervall()
+    Dim NextTime As Date
+    NextTime = Now + TimeValue("00:00:05")  'Zeitintervall festlegen, hier 15 Minuten
+    Application.OnTime NextTime, "Intervall"
+    Call Spielfeld_aktualisieren      'Eingabe von Schritt, der wiederholt werden soll
+End Sub
+
+Sub Spielfeld_aktualisieren()
+  
+    Application.ScreenUpdating = False
+    Application.DisplayAlerts = False
+
+    Set ext_wb = Workbooks.Open(DateiPfad)
+    
+    'Kopiere Codekarte auf Aktuelles Woorkbook
+    ext_wb.Sheets("Home").Range("B2:F6").Copy
+    ThisWorkbook.Sheets("Spielfeld").Range("B2").PasteSpecial
+    'Kopiere Serverspielfeld auf Aktuelles Woorkbook
+    ext_wb.Sheets("Home").Range("H9:L13").Copy
+    ThisWorkbook.Sheets("Spielfeld").Range("H2").PasteSpecial
+    
+    'Kopiere Team Am Zug
+    ext_wb.Sheets("Home").Cells(9, 7).Copy
+    ThisWorkbook.Sheets("Spielfeld").Cells(8, 4).PasteSpecial
+
+    ext_wb.Close
+
+    Application.ScreenUpdating = True
+    Application.DisplayAlerts = True
+    End Sub
